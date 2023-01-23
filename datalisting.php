@@ -52,9 +52,9 @@ $datainsert = $data->fetchAll(PDO::FETCH_ASSOC);
                     <?php foreach ($datainsert as $key => $datalisting) { ?>
                         <tr>
                             <!-- we write the data we want to list into the variable we transfer. -->
-                            <th scope="row"><?php echo $datalisting['id'] ?></th>
-                            <td><?php echo $datalisting['username'] ?></td>
-                            <td><?php echo $datalisting['usermail'] ?></td>
+                            <th scope="row"><?php echo $datalisting['user_id'] ?></th>
+                            <td><?php echo $datalisting['user_name'] ?></td>
+                            <td><?php echo $datalisting['user_mail'] ?></td>
                         </tr>
                     <?php } ?>
                 </tbody>
